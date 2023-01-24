@@ -5,75 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7fd506e264.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Porfafolio</title>
 </head>
 <body>
-  <nav class="navbar bg-dark text-light">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navfont">
     <div class="container-fluid">
-      <span class="navbar-brand mb-0 h1">Navbar</span>
+      <a class="navbar-brand link-dark" href="#">
+        <h2>Guillermo Palma</h2>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active link-secondary" aria-current="page" href="#">Mis trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-secondary" href="#">Sobre Mi</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled ">Sitios recomendados</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
-<div class="row g-2">
+  <div class="main">
+    <h1>Hola, Soy <br> Guillermo Palma</h1>   
+    <h3 class="maintex2">Futuro Desarrollador Web Full Stack JavaScript.</h3>
+    <img class="mainimg justify-content-center mx-auto" src="assets/img/main1.jpg" alt="fotomain">
+  </div>
+ <!--carusel-->
+<div id="carouselExampleIndicators" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+  </div>
+  <div class="carousel-inner">
 
-  <div class="col-md-8 mx-auto">
-    <div class="card">
-      <h5 class="card-header">Desafio 1 - CV</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="assets/desafios/desafio1/index.html" class="btn btn-dark">Ver</a>
+    <div class="carousel-item active d-item">
+      <img src="assets/img/img1.jpg" class="d-block w-100 d-img" alt="img1">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-3 fs-3 p-font">
+          -HTML-
+        </p>
+        <h1 class="display-1 fw-bolder">
+          Diseñando un CV en un sitio HTML.
+        </h1>
+        <a href="assets/desafios/desafio1/index.html" class="btn btn-outline-light">Ver</a>
       </div>
     </div>
-  </div>  
 
-  <div class="col-md-8 mx-auto">
-    <div class="card">
-      <h5 class="card-header">Desafio 2 - Lista de Precios</h5>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="assets/desafios/desafio2/index.html" class="btn btn-dark">Ver</a>
+    <div class="carousel-item d-item">
+      <img src="assets/img/img2.jpg" class="d-block w-100 d-img" alt="img2">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-3 fs-3 p-font">
+          -CSS-
+        </p>
+        <h1 class="display-1 fw-bolder">
+          Hojas de estilo en cascada.
+        </h1>
+        <a href="assets/desafios/desafio2/index.html" class="btn btn-outline-light">Ver</a>
       </div>
     </div>
+
+    <div class="carousel-item d-item">
+      <img src="assets/img/img3.png" class="d-block w-100 d-img" alt="img3">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-3 fs-3 p-font">
+          -IGUANA-
+        </p>
+        <h1 class=" fw-bolder">
+          Posicionamiento, Modelo de Cajas.
+        </h1>
+        <a href="assets/desafios/desafio3/index.html" class="btn btn-outline-light">Ver</a>
+      </div>
+    </div>
+
+    <div class="carousel-item d-item">
+      <img src="assets/img/img4.png" class="d-block w-100 d-img" alt="img4">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-3 fs-3 p-font">
+          -BOOSTRAP-
+        </p>
+        <h1 class="display-1 fw-bolder">
+          Landing page con Boostrap.
+        </h1>
+        <a href="assets/desafios/desafio4/index.html" class="btn btn-outline-light">Ver</a>
+      </div>
+    </div>
+
+    <div class="carousel-item d-item">
+      <img src="assets/img/img5.jpg" class="d-block w-100 d-img" alt="img5">
+      <div class="carousel-caption top-0 mt-4">
+        <p class="mt-3 fs-3 p-font">
+          -GITHUB-
+        </p>
+        <h1 class="display-1 fw-bolder">
+          Fork en proyectos de Github.
+        </h1>
+        <a href="assets/desafios/desafio5/index.html" class="btn btn-outline-light"> Ver </a>
+      </div>
+    </div>
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--formulario-->
+<div class="formulario">
+  <div class="tituloformulario text-Ligh text-center mt-4">Contacto
+  </div>
+  <div class="mb-2 w-75 mx-auto">
+    <label for="disabledTextInput" class="form-label"></label>
+    <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre">
+  </div>
+  <div class="mb-3 w-75 mx-auto">
+    <label for="disabledTextInput" class="form-label"></label>
+    <input type="text" id="disabledTextInput" class="form-control" placeholder="Correo Electrónico">
   </div>
 
-    <div class="col-md-8 mx-auto">
-      <div class="card">
-        <h5 class="card-header">Desafio 3 - Iguana</h5>
-        <div class="card-body">
-          <h5 class="card-title">Special title treatment</h5>
-          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          <a href="assets/desafios/desafio3/index.html" class="btn btn-dark">Ver</a>
-        </div>
-      </div>
-    </div>
+  <div class="mb-3 w-75 mx-auto">
+    <label for="disabledTextInput" class="form-label"></label>
+    <textarea class="form-control" placeholder="Estimado Guillermo Palma ..." id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
 
-      <div class="col-md-8 mx-auto">
-        <div class="card">
-          <h5 class="card-header">Desafio 4 - CUPPON</h5>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="assets/desafios/desafio4/index.html" class="btn btn-dark">Ver</a>
-          </div>
-        </div>
-      </div>  
-
-      <div class="col-md-8 mx-auto">
-        <div class="card mx-auto">
-          <h5 class="card-header">Desafio 5 - GITHUB/FORK/NUEVO CV</h5>
-          <div class="card-body">
-            <h5 class="card-title">Special title treatment</h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <a href="assets/desafios/desafio5/index.html" class= "btn btn-dark">Ver</a>
-          </div>
-        </div>
-      </div>  
+  <div class="button text-center">
+       <button type="button" class="btn btn-dark px-4 mb-4">Enviar</button>
+  </div>
 </div>
 
-</div>
-    
+<footer class="bg-dark text-center text-light p-4">
+  <p class="mb-0">Guillermo Palma 2023. Todos los derechos reservados.</p>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>

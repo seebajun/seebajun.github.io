@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+
+.main{
+    display: flex;
+    min-height: 450px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    margin: 4rem;
+    font-size: 4.5rem;
+}
+
+.maintex2{
+    font-family: 'Rubik Dirt', cursive;   
+}
+
+.navfont{
+    font-family: 'Dangrek', cursive;
+    font-size: 1rem;
+}
+
+.mainimg {
+    width: 500px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7)
+}
+
+.d-item{
+    height: 500px;
+}
+
+.formulario{
+
+    font-size: 21px;
+    padding-top: 25px;
+}
+
+.p-font{
+    font-family: 'Dangrek', cursive;    
+}
